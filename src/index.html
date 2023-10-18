@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Propeller Aeroacoustics</title>
+    <title>TUBAA Aeroacoustics</title>
   </head>
-  <body class="w-full justify-center text-center">
+  <body class="w-4/5 mx-auto justify-center text-center">
     <div id="main" class="h-full bg-white p-8">
       <header class="justify-center text-center">
-        <p class="text-5xl">AAoUBSaTGfPNR</p>
-        <p class="text-2xl">Acoustic Analysis of Uneven Blade Spacing and Toroidal Geometry for Propeller Noise Reduction</p>
+        <p class="text-6xl"><a href="index.html" class="nounderline">TUBAA</a></p>
+        <p class="text-4xl">Toroidal and Uneven Blade Aeroacoustic Analysis</p>
         <div id="authors" class="mt-5 mb-5 w-8/9 grid grid-rows-1 grid-flow-col gap-4 m-auto">
           <div>
             <p class="text-base"><a href="https://nikhil-k-v.github.io/nkvengineering/">Nikhil Vijay</a>*</p>
@@ -49,6 +49,27 @@
         <div class="text-sm mt-1">†Flow & Aeroacoustics Laboratory, Stanford University—Stanford, CA, USA</div>
       </header>
       <div id="content" class="">
+        <div class="mx-auto">
+          <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl">
+            arXiv
+            <!-- add hrefs when preprinted -->
+            <a>
+              <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">1</div>
+            </a>
+            <a>
+              <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">2</div>
+            </a>
+            <a>
+              <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">3</div>
+            </a>
+          </div>
+          <a href="https://github.com/amselab24/AcousticAnalysisWebsite">
+            <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl"><i class="fa-brands fa-github mr-2"></i>GitHub</div>
+          </a>
+          <a href="https://github.com/amselab24/AcousticAnalysis">
+            <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl"><i class="fa-solid fa-code mr-2"></i>Code</div>
+          </a>
+        </div>
         <p class="text-3xl mt-5">About Us</p>
         <p>We are eight senior students from The Academy for Math, Science, and Engineering, a high school located in Rockaway, NJ.
           As we are passionate about conducting research and learning about various fields of engineering, we decided to collaborate on a huge research project, which has been condensed into this set of papers.
@@ -57,25 +78,31 @@
         <p class="text-3xl mt-5">Overview</p>
         <p>This is a set of three papers on drone propellers, optimization of their aeroacoustic performance, design standards, and 3D printing methodology.</p>
         <br>
-        <div class="mt-5 mb-5 w-3/4 grid grid-rows-1 grid-flow-col gap-4 m-auto">
-          <div class="w-48 h-60 text-center">
-            <p class="text-xl mb-2">Paper 1</p>
-            <div class="h-full p-3 bg-gray-400 rounded-md flex justify-center align-center flex-col">
-              <p class="text-lg">Acoustic Analysis of Propeller Annoyance Using Uneven Blade Spacing and Toroidal Geometry</p>
+        <div class="mt-5 mb-5 w-3/4 grid grid-flow-row md:grid-rows-1 md:grid-flow-col gap-12 md:gap-6 mx-auto">
+          <a href="1/index.html" class="nounderline">
+            <div class="h-full w-48 h-60 text-center">
+              <p class="text-xl mb-2">Paper 1</p>
+              <div class="h-full p-3 bg-gray-200 rounded-md flex justify-center align-center flex-col">
+                <p class="text-lg">Acoustic Analysis of Propeller Annoyance Using Uneven Blade Spacing and Toroidal Geometry</p>
+              </div>
             </div>
-          </div>
-          <div class="w-48 h-60 text-center">
-            <p class="text-xl mb-2">Paper 2</p>
-            <div class="h-full p-3 bg-gray-400 rounded-md flex justify-center align-center flex-col">
-              <p class="text-lg">Parameterized Standards for Propeller Design Comparisons</p>
+          </a>
+          <a href="2/index.html" class="nounderline">
+            <div class="h-full w-48 h-60 text-center">
+              <p class="text-xl mb-2">Paper 2</p>
+              <div class="h-full p-3 bg-gray-200 rounded-md flex justify-center align-center flex-col">
+                <p class="text-lg">Parameterized Standards for Propeller Design Comparisons</p>
+              </div>
             </div>
-          </div>
-          <div class="w-48 h-60 text-center">
-            <p class="text-xl mb-2">Paper 3</p>
-            <div class="h-full p-3 bg-gray-400 rounded-md flex justify-center align-center flex-col">
-              <p class="text-lg">3D Printed Drone Propeller Performance Effects</p>
+          </a>
+          <a href="3/index.html" class="nounderline">
+            <div class="h-full w-48 h-60 text-center">
+              <p class="text-xl mb-2">Paper 3</p>
+              <div class="h-full p-3 bg-gray-200 rounded-md flex justify-center align-center flex-col">
+                <p class="text-lg">3D Printed Drone Propeller Performance Effects</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <br>
         <p class="text-3xl mt-5">Abstract</p>

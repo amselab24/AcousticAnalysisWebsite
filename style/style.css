@@ -6,8 +6,11 @@
 }
 
 a {
-    text-decoration: underline !important;
     color: #2525aa !important;
+}
+
+a:not(.nounderline) {
+    text-decoration: underline !important;
 }
 
 #main {
