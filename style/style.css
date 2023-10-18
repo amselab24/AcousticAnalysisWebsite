@@ -5,12 +5,9 @@
     color: rgb(31 41 55);
 }
 
-a {
-    color: #2525aa !important;
-}
-
 a:not(.nounderline) {
     text-decoration: underline !important;
+    color: #2525aa !important;
 }
 
 #main {
