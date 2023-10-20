@@ -3,20 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <script src="https://pawelgrzybek.github.io/siema/assets/siema.min.js"></script>
+
+    <script src="script.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TUBAA Aeroacoustics</title>
   </head>
+
   <body class="w-4/5 mx-auto justify-center text-center">
-    <div id="main" class="h-full bg-white p-8">
+    
+    <button id="darkModeToggle" class="dark-mode-btn">
+      <i class="far fa-moon"></i>
+    </button>
+  
+    <div id="main" class="h-full p-8">
       <header class="justify-center text-center">
         <p class="text-6xl"><a href="/" class="nounderline">TUBAA</a></p>
-        <p class="text-4xl">Toroidal and Uneven Blade Aeroacoustic Analysis</p>
-        <div id="authors" class="mt-5 mb-5 w-8/9 grid grid-rows-1 grid-flow-col gap-4 m-auto">
+        <p class="text-3xl">Toroidal and Uneven Blade Aeroacoustic Analysis</p>
+        <p class="text-xl">Methodology for Parametric Propeller Design, Testing, and Aeroacoustic Evaluation</p>
+        <div id="authors" class="mt-5 mb-5 w-8/9 grid grid-rows-1 grid-flow-col gap-4 mx-2">
           <div>
-            <p class="text-base"><a href="https://nikhil-k-v.github.io/nkvengineering/">Nikhil Vijay</a>*</p>
+            <p class="text-base"><a href="https://nkve.dev">Nikhil Vijay</a>*</p>
           </div>
           <div>
             <p class="text-base"><a href="https://gtweb.vercel.app">William Forte</a>*</p>
@@ -34,10 +48,10 @@
             <p class="text-base"><a href="linkedin.com/in/sarvesh-patham-5b7950246">Sarvesh Patham</a>*</p>
           </div>
           <div>
-            <p class="text-base"><a href="https://rishitarora.vercel.app/">Rishit Arora</a>*</p>
+            <p class="text-base"><a href="http://sainventions.com/">Sahil Shah</a>*</p>
           </div>
           <div>
-            <p class="text-base"><a href="http://sainventions.com/">Sahil Shah</a>*</p>
+            <p class="text-base"><a href="https://rishitarora.vercel.app/">Rishit Arora</a>*</p>
           </div>
         </div>
         <div id="authors" class="mt-5 mb-5 w-8/9 grid grid-rows-1 grid-flow-col gap-4 m-auto">
@@ -48,25 +62,25 @@
         <div class="text-sm">*The Academy for Mathematics, Science, and Engineering—Rockaway, NJ, USA</div>
         <div class="text-sm mt-1">†Flow & Aeroacoustics Laboratory, Stanford University—Stanford, CA, USA</div>
       </header>
-      <div id="content" class="">
+      <div id="content">
         <div class="mx-auto">
           <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl">
             arXiv
             <!-- add hrefs when preprinted -->
-            <a>
+            <a  class="nounderline">
               <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">1</div>
             </a>
-            <a>
+            <a  class="nounderline">
               <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">2</div>
             </a>
-            <a>
+            <a  class="nounderline">
               <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">3</div>
             </a>
           </div>
-          <a href="https://github.com/amselab24/AcousticAnalysisWebsite">
+          <a href="https://github.com/amselab24/AcousticAnalysisWebsite"  class="nounderline">
             <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl"><i class="fa-brands fa-github mr-2"></i>GitHub</div>
           </a>
-          <a href="https://github.com/amselab24/AcousticAnalysis">
+          <a href="https://github.com/amselab24/AcousticAnalysis"  class="nounderline">
             <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl"><i class="fa-solid fa-code mr-2"></i>Code</div>
           </a>
         </div>
@@ -75,42 +89,139 @@
           As we are passionate about conducting research and learning about various fields of engineering, we decided to collaborate on a huge research project, which has been condensed into this set of papers.
           We thank Gao Jun Wu, PhD Candidate and member of the <a href="https://fpal.stanford.edu/people/gao-jun-gary-wu">Stanford FPAL Lab</a>, for contributing his indispensable technical expertise.
         </p>
-        <p class="text-3xl mt-5">Overview</p>
-        <p>This is a set of three papers on drone propellers, optimization of their aeroacoustic performance, design standards, and 3D printing methodology.</p>
+
+        <div class="carousel mt-4">
+          <div class="siema" id="carousel1">
+            <div><img src="../assets/toroid-cad.png" alt="Siema image" /></div>
+            <div><img src="../assets/uneven-cad.png" alt="Siema image" /></div>
+            <div><img src="../assets/counterweight-cad.png" alt="Siema image" /></div>
+          </div>
+  
+          <button class="prev text-xl mx-2" data-target="carousel1">◄ back</button>
+          <button class="next text-xl mx-2" data-target="carousel1">next ►</button>
+        </div>
+        
+
+        <div class="bg-gray-300 p-4 mt-10 rounded-md ">         
+          <p class="text-3xl">Overview</p>
+          <p>This is a set of three papers on drone propellers, optimization of their aeroacoustic performance, design standards, and 3D printing methodology.</p>
+        </div>
+
         <br>
-        <div class="mt-5 mb-5 w-3/4 grid grid-flow-row md:grid-rows-1 md:grid-flow-col gap-12 md:gap-6 mx-auto">
+        <div class="mt-5 mb-5 w-3/3 h-40 grid grid-rows-1 grid-cols-3 gap-12 md:gap-6 mx-auto">
           <a href="1/index.html" class="nounderline">
-            <div class="h-full w-48 h-60 text-center">
-              <p class="text-xl mb-2">Paper 1</p>
+            <div class="w-50 h-full text-center">
+              <p class="text-lg ">Paper 1</p>
+              <p class="text-xl mb-2"><b>Propeller Materials, Fabrication, and Testing Methodology</b></p>
               <div class="h-full p-3 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                <p class="text-lg">Acoustic Analysis of Propeller Annoyance Using Uneven Blade Spacing and Toroidal Geometry</p>
+                <p class="text-lg">How do we standardize experimental materials & methods for propeller testing within aeroacoustics research?</p>
               </div>
             </div>
           </a>
           <a href="2/index.html" class="nounderline">
-            <div class="h-full w-48 h-60 text-center">
-              <p class="text-xl mb-2">Paper 2</p>
+            <div class="w-50 h-full text-center">
+              <p class="text-lg ">Paper 2</p>
+              <p class="text-xl mb-2"><b>Experimental Aeroacoustic Evaluation of Propeller Designs</b> </p>
+              
               <div class="h-full p-3 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                <p class="text-lg">Parameterized Standards for Propeller Design Comparisons</p>
+                <p class="text-lg">How can we create an objective function to quantify the performance of a propeller? What can we find from evaluating various designs using this?</p>
               </div>
             </div>
           </a>
           <a href="3/index.html" class="nounderline">
-            <div class="h-full w-48 h-60 text-center">
-              <p class="text-xl mb-2">Paper 3</p>
+            <div class="w-50 h-full text-center">
+              <p class="text-lg ">Paper 3</p>
+              <p class="text-xl mb-2"><b>Propeller Curve Construction & Design Methodology</b></p>
+              
               <div class="h-full p-3 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                <p class="text-lg">3D Printed Drone Propeller Performance Effects</p>
+                <p class="text-lg">How can we design propellers parametrically? What parameters are useful to control
+                  within research & comparison purposes? 
+                </p>
               </div>
             </div>
           </a>
         </div>
-        <br>
-        <p class="text-3xl mt-5">Abstract</p>
-        <p>abstract</p>
+        <br/>
+        <br/>
+        <br/>
+
+        <p class="text-3xl mt-6">Abstract</p>
+        <p>Abstract</p>
+        
+
+        <div class="bg-gray-300 p-4 mt-10 rounded-md ">         
+          <div class="grid grid-rows-1 grid-cols-3 align-center justify-center">
+            <div id="stl_6blade" style="height: 250px;"></div>
+            <div id="stl_toroid" style="height: 250px;"></div>
+            <div id="stl_uneven" style="height: 250px;"></div>  
+          </div>
+
+          <div class="carousel mt-8" style="max-width: 55rem;">
+            <div class="siema" id="carousel2" style="border:3px solid rgba(15, 20, 30, 0.5);">
+              <div><img src="../assets/figure1.PNG" alt="Siema image" /></div>
+              <div><img src="../assets/figure1.PNG" alt="Siema image" /></div>
+            </div>
+  
+            <button class="prev text-xl mt-4 mx-2" data-target="carousel2">◄ back</button>
+            <button class="next text-xl mt-4" data-target="carousel2">next ►</button>
+          </div>
+        </div>
+        
+
+
+      
       </div>
+
+        <script src="./stl_viewer/stl_viewer.min.js"></script>
+        <script>
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_toroid"),
+                {
+                  auto_rotate: true,
+                  zoom: '165',
+                  models:
+                  [
+                      {filename:"3loop.stl"},
+                  ]
+                }
+                
+            );
+
+            var stl_viewer2 =new StlViewer
+            (
+                document.getElementById("stl_uneven"),
+                {
+                  auto_rotate: true,
+                  zoom: '165',
+                  models:
+                  [
+                      {filename:"uneven.stl"},
+                  ]
+                }
+                
+            );
+
+            var stl_viewer3 =new StlViewer
+            (
+                document.getElementById("stl_6blade"),
+                {
+                  auto_rotate: true,
+                  zoom: '165',
+                  models:
+                  [
+                      {filename:"6-blade.stl"},
+                  ]
+                }
+                
+            );
+        </script>
+
+      
       <footer class="mt-10 p-10 justify-center text-center">
         <p class="text-base">© 2023 MSE LAB '24</p>
       </footer>
     </div>
+
   </body>
 </html>

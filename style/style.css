@@ -2,7 +2,7 @@
 
 :root {
     font-family: 'Varela Round', sans-serif;
-    color: rgb(31 41 55);
+    color: rgb(61 71 85);
 }
 
 a:not(.nounderline) {
@@ -11,7 +11,7 @@ a:not(.nounderline) {
 }
 
 #main {
-    max-width: 1100px;
+    max-width: 1050px;
     margin: auto;
 }
 
@@ -19,8 +19,121 @@ a:not(.nounderline) {
     font-size: 16px !important;
 }
 
+.text-6xl {
+    font-weight: 700;
+}
+
 .institution {
     font-size: 10px !important;
     font-weight: 300;
     color: grey !important;
 }
+
+/* Dark Mode Toggle Button Styles */
+.dark-mode-btn {
+    position: fixed;
+    background: transparent;
+    border: none;
+    color: rgb(81 91 105);
+    cursor: pointer;
+    z-index: 1000;
+    transition: color 0.3s ease;
+    top: 20px; /* increased distance from the top */
+    right: 40px; /* increased distance from the right */
+    font-size: 2.5rem; /* made the icon bigger */
+}
+
+.dark-mode-btn.dark {
+    color: #FFF;
+}
+
+.dark-mode-btn:focus {
+    outline: none;
+}
+
+
+
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    background-color: rgb(15, 20, 30);
+    color: #FFF;
+}
+
+
+[data-theme="dark"] a:not(.nounderline) {
+    color: #7092c0 !important;
+}
+
+[data-theme="dark"] .text-base.inline-block.bg-gray-800 {
+    background-color: #293751 !important;
+}
+
+[data-theme="dark"] .text-base.inline-block.bg-gray-400 {
+    background-color:  #293751 !important;
+    border: 1px solid #7092c0 !important;
+    color: #FFF !important;
+}
+
+[data-theme="dark"] .prev {
+    color:  #7092c0 !important;
+    padding: 6px !important;
+    border-radius: 6px !important;
+    transition: ease-in-out 0.6s !important;
+}
+
+[data-theme="dark"] .next {
+    color:  #7092c0 !important;
+    padding: 6px !important;
+    border-radius: 6px !important;
+    transition: ease-in-out 0.6s !important;
+}
+
+.prev:focus, .next:focus {
+    outline: none;
+}
+
+[data-theme="dark"] .bg-gray-200 {
+    background-color: #314a73 !important;
+    color: #FFF;
+}
+
+[data-theme="dark"] .bg-gray-300 {
+    background-color: #293751 !important;
+    color: #FFF;
+}
+
+/* Hide default scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(61 71 85); /* color based on the new root text color */
+    border-radius: 4px;
+}
+
+/* move the scrollbar to the left */
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(61, 71, 85, 0.8);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(61, 71, 85, 0.1);
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.siema img {
+    width: 100%;
+  }
