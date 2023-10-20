@@ -57,45 +57,45 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    var stl_viewer=new StlViewer
-    (
-        document.getElementById("stl_toroid"),
-        {
-          auto_rotate: true,
-          zoom: '165',
-          models:
-          [
-              {filename:"3loop.stl"},
-          ]
-        }
-        
-    );
+                var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_toroid"),
+                {
+                  auto_rotate: true,
+                  zoom: '165',
+                  models:
+                  [
+                      {filename:"3loop.stl"},
+                  ]
+                }
+                
+            );
 
-    var stl_viewer2 =new StlViewer
-    (
-        document.getElementById("stl_uneven"),
-        {
-          auto_rotate: true,
-          zoom: '165',
-          models:
-          [
-              {filename:"uneven.stl"},
-          ]
-        }
-        
-    );
+            var stl_viewer2 =new StlViewer
+            (
+                document.getElementById("stl_uneven"),
+                {
+                  auto_rotate: true,
+                  zoom: '165',
+                  models:
+                  [
+                      {filename:"uneven.stl"},
+                  ]
+                }
+                
+            );
 
-    var stl_viewer3 =new StlViewer
-    (
-        document.getElementById("stl_6blade"),
-        {
-          auto_rotate: true,
-          zoom: '165',
-          models:
-          [
-              {filename:"6-blade.stl"},
-          ]
-        }
-        
-    );
+            var stl_viewer3 =new StlViewer
+            (
+                document.getElementById("stl_6blade"),
+                {
+                  auto_rotate: true,
+                  zoom: '165',
+                  models:
+                  [
+                      {filename:"6-blade.stl"},
+                  ]
+                }
+                
+            );
 });
