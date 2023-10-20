@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         selector: "#carousel2",
     });
 
+    
+
     document.querySelectorAll(".prev").forEach((button) => {
         button.addEventListener("click", () => {
             const target = button.getAttribute("data-target");

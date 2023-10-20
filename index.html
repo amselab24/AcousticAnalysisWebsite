@@ -17,7 +17,7 @@
     <title>TUBAA Aeroacoustics</title>
   </head>
 
-  <body class="w-4/5 mx-auto justify-center text-center">
+  <body class="w-4/5 mx-auto justify-center text-justify">
     
     <button id="darkModeToggle" class="dark-mode-btn">
       <i class="far fa-moon"></i>
@@ -28,7 +28,7 @@
         <p class="text-6xl"><a href="/" class="nounderline">TUBAA</a></p>
         <p class="text-3xl">Toroidal and Uneven Blade Aeroacoustic Analysis</p>
         <p class="text-xl">Methodology for Parametric Propeller Design, Testing, and Aeroacoustic Evaluation</p>
-        <div id="authors" class="mt-5 mb-5 w-8/9 grid grid-rows-1 grid-flow-col gap-4 mx-2">
+        <div id="authors" class="mt-5 mb-3 w-8/9 grid grid-rows-1 grid-flow-col gap-4 mx-2">
           <div>
             <p class="text-base"><a href="https://nkve.dev">Nikhil Vijay</a>*</p>
           </div>
@@ -54,7 +54,7 @@
             <p class="text-base"><a href="https://rishitarora.vercel.app/">Rishit Arora</a>*</p>
           </div>
         </div>
-        <div id="authors" class="mt-5 mb-5 w-8/9 grid grid-rows-1 grid-flow-col gap-4 m-auto">
+        <div id="authors" class="mt-5 mb-3 w-8/9 grid grid-rows-1 grid-flow-col gap-4 m-auto">
           <div>
             <p class="text-base"><a href="https://profiles.stanford.edu/gao-jun-wu">Gao Jun Wu</a>†</p>
           </div>
@@ -63,8 +63,8 @@
         <div class="text-sm mt-1">†Flow & Aeroacoustics Laboratory, Stanford University—Stanford, CA, USA</div>
       </header>
       <div id="content">
-        <div class="mx-auto">
-          <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl">
+        <div class="mx-auto text-center">
+          <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-2 mx-2 rounded-3xl">
             arXiv
             <!-- add hrefs when preprinted -->
             <a  class="nounderline">
@@ -78,19 +78,22 @@
             </a>
           </div>
           <a href="https://github.com/amselab24/AcousticAnalysisWebsite"  class="nounderline">
-            <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl"><i class="fa-brands fa-github mr-2"></i>GitHub</div>
+            <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-2 mx-2 rounded-3xl"><i class="fa-brands fa-github mr-2"></i>GitHub</div>
           </a>
           <a href="https://github.com/amselab24/AcousticAnalysis"  class="nounderline">
-            <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl"><i class="fa-solid fa-code mr-2"></i>Code</div>
+            <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-2 mx-2 rounded-3xl"><i class="fa-solid fa-code mr-2"></i>Code</div>
           </a>
         </div>
-        <p class="text-3xl mt-5">About Us</p>
-        <p>We are eight senior students from The Academy for Math, Science, and Engineering, a high school located in Rockaway, NJ.
-          As we are passionate about conducting research and learning about various fields of engineering, we decided to collaborate on a huge research project, which has been condensed into this set of papers.
-          We thank Gao Jun Wu, PhD Candidate and member of the <a href="https://fpal.stanford.edu/people/gao-jun-gary-wu">Stanford FPAL Lab</a>, for contributing his indispensable technical expertise.
-        </p>
 
-        <div class="carousel mt-4">
+        <div class="bg-gray-200 p-6 mt-2 rounded-md w-full"> 
+          <p class="text-3xl p4">About Us</p>
+          <p class="p4">We are eight senior students from The Academy for Math, Science, and Engineering, a high school located in Rockaway, NJ.
+            As we are passionate about conducting research and learning about various fields of engineering, we decided to collaborate on a huge research project, which has been condensed into this set of papers.
+            We thank Gao Jun Wu, PhD Candidate and member of the <a href="https://fpal.stanford.edu/people/gao-jun-gary-wu">Stanford FPAL Lab</a>, for contributing his indispensable technical expertise.
+          </p>
+        </div>
+
+        <div class="carousel  text-center">
           <div class="siema" id="carousel1">
             <div><img src="../assets/3_loop_toroidal.png" alt="Siema image" /></div>
             <div><img src="../assets/6_blade_uneven.png" alt="Siema image" /></div>
@@ -101,41 +104,41 @@
           <button class="prev text-xl mx-2" data-target="carousel1">◄ back</button>
           <button class="next text-xl mx-2" data-target="carousel1">next ►</button>
         </div>
-        
 
-        <div class="bg-gray-300 p-4 mt-10 rounded-md ">         
+        
+        <div class="bg-gray-200 p-6 mt-4 mb-4 rounded-md ">         
           <p class="text-3xl">Overview</p>
           <p>This is a set of three papers on drone propellers, optimization of their aeroacoustic performance, design standards, and 3D printing methodology.</p>
         </div>
 
-        <br>
-        <div class="mt-5 mb-5 w-3/3 h-40 grid grid-rows-1 grid-cols-3 gap-12 md:gap-6 mx-auto">
+        <div class=" mb-8 w-3/3 h-40 grid grid-rows-1 grid-cols-3 gap-12 md:gap-2 mx-auto">
           <a href="1/paper1.html" class="nounderline">
-            <div class="w-50 h-full text-center">
-              <p class="text-lg ">Paper 1</p>
-              <p class="text-xl mb-2"><b>Propeller Materials, Fabrication, and Testing Methodology</b></p>
-              <div class="h-full p-3 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                <p class="text-lg">How do we standardize experimental materials & methods for propeller testing within aeroacoustics research?</p>
+            <div class="w-50 h-full  text-center">
+              <p class="text-lg mb-2 text-center">Paper 1</p>
+                <p class="text-xl mb-4"><b>Testing Methodology, Material Evaluation, and Fabrication for Propellers</b></p>
+              <div class="p-4 bg-gray-200 rounded-md flex justify-center align-center flex-col">
+                
+                <p class="text-lg text-justify mb-2 ">How can we develop standard experimental materials/methods for controlled, research-oriented propeller testing?</p>
               </div>
             </div>
           </a>
           <a href="2/paper2.html" class="nounderline">
-            <div class="w-50 h-full text-center">
-              <p class="text-lg ">Paper 2</p>
-              <p class="text-xl mb-2"><b>Experimental Aeroacoustic Evaluation of Propeller Designs</b> </p>
-              
-              <div class="h-full p-3 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                <p class="text-lg">How can we create an objective function to quantify the performance of a propeller? What can we find from evaluating various designs using this?</p>
+            <div class="w-50 h-full  text-center">
+              <p class="text-lg mb-2 text-center">Paper 2</p>
+                <p class="text-xl mb-4"><b>Evaluation of Aeroacoustics & Annoyance of Unconventional Propeller Designs</b></p>  
+              <div class="p-4 bg-gray-200 rounded-md flex justify-center align-center flex-col">
+                
+                <p class="text-lg  mb-2  text-justify">How can we make an objective function to quantify propeller performance? What can we find from evaluating various designs?</p>
               </div>
             </div>
           </a>
           <a href="3/paper3.html" class="nounderline">
             <div class="w-50 h-full text-center">
-              <p class="text-lg ">Paper 3</p>
-              <p class="text-xl mb-2"><b>Propeller Curve Construction & Design Methodology</b></p>
-              
-              <div class="h-full p-3 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                <p class="text-lg">How can we design propellers parametrically? What parameters are useful to control
+              <p class="text-lg mb-2 text-center">Paper 3</p>
+                <p class="text-xl mb-4 "><b>Parametric Propeller Curve Construction & General Design Methodology</b> </p>
+              <div class="p-4 bg-gray-200 rounded-md flex justify-center align-center flex-col">
+                
+                <p class="text-lg  mb-2 text-justify">How can we design propellers parametrically? What parameters are useful to control
                   within research & comparison purposes? 
                 </p>
               </div>
@@ -146,14 +149,14 @@
         <br/>
         <br/>
 
-        <div class="bg-gray-300 p-4 mt-10 rounded-md ">         
+        <div class="bg-gray-200 p-4 mt-10 rounded-md ">         
           <div class="grid grid-rows-1 grid-cols-3 align-center justify-center">
             <div id="stl_6_blade_even" style="height: 275px;"></div>
             <div id="stl_3_loop_toroidal" style="height: 275px;"></div>
             <div id="stl_6_blade_uneven" style="height: 275px;"></div>  
           </div>
 
-          <div class="carousel mt-8" style="max-width: 55rem;">
+          <div class="carousel mt-8  text-center" style="max-width: 55rem;">
             <div class="siema" id="carousel2">
               <div><img src="../assets/figure1.PNG" alt="Siema image" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
               <div><img src="../assets/figure2.PNG" alt="Siema image" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>

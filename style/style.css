@@ -2,7 +2,7 @@
 
 :root {
     font-family: 'Varela Round', sans-serif;
-    color: rgb(31 41 55);
+    color: rgb(11 21 35);
 }
 
 a:not(.nounderline) {
@@ -66,12 +66,12 @@ a:not(.nounderline) {
 }
 
 [data-theme="dark"] .text-base.inline-block.bg-gray-800 {
-    background-color: #293751 !important;
+    background-color: #29375166 !important;
 }
 
 [data-theme="dark"] .text-base.inline-block.bg-gray-400 {
-    background-color:  #293751 !important;
-    border: 1px solid #7092c0 !important;
+    background-color:  #29375166 !important;
+    border: 1px solid #7092c066 !important;
     color: #FFF !important;
 }
 
@@ -94,12 +94,12 @@ a:not(.nounderline) {
 }
 
 [data-theme="dark"] .bg-gray-200 {
-    background-color: #314a73 !important;
+    background-color: #29375166 !important;
     color: #FFF;
 }
 
 [data-theme="dark"] .bg-gray-300 {
-    background-color: #293751 !important;
+    background-color: #29375166 !important;
     color: #FFF;
 }
 
@@ -139,6 +139,8 @@ a:not(.nounderline) {
     height: 100%;
   }
 
+
+  
 #carousel2 {
     max-width: 55rem !important;
     margin: auto;
