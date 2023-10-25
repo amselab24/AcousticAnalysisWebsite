@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
     <script src="./stl_viewer/stl_viewer.min.js"></script>
-
     <script src="https://pawelgrzybek.github.io/siema/assets/siema.min.js"></script>
-
     <script src="script.js"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TUBAA Aeroacoustics</title>
-  </head>
-
-  <body class="w-4/5 mx-auto justify-center text-justify">
+    <style>
+        .nounderline { text-decoration: none; }
+    </style>
+</head>
+<body class="w-4/5 mx-auto justify-center text-justify">
     
     <button id="darkModeToggle" class="dark-mode-btn">
       <i class="far fa-moon"></i>
@@ -29,30 +31,14 @@
         <p class="text-3xl">Toroidal and Uneven Blade Aeroacoustic Analysis</p>
         <p class="text-xl">Methodology for Parametric Propeller Design, Testing, and Aeroacoustic Evaluation</p>
         <div id="authors" class="mt-5 mb-3 w-8/9 grid grid-rows-1 grid-flow-col gap-4 mx-2">
-          <div>
-            <p class="text-base"><a href="https://nkve.dev">Nikhil Vijay</a>*</p>
-          </div>
-          <div>
-            <p class="text-base"><a href="https://gtweb.vercel.app">William Forte</a>*</p>
-          </div>
-          <div>
-            <p class="text-base"><a href="linkedin.com/in/prathamesh-trivedi-morris">Prathamesh Trivedi</a>*</p>
-          </div>
-          <div>
-            <p class="text-base"><a href="/">Ishan Gajjar</a>*</p>
-          </div>
-          <div>
-            <p class="text-base"><a href="/">Syon Gupta</a>*</p>
-          </div>
-          <div>
-            <p class="text-base"><a href="linkedin.com/in/sarvesh-patham-5b7950246">Sarvesh Patham</a>*</p>
-          </div>
-          <div>
-            <p class="text-base"><a href="http://sainventions.com/">Sahil Shah</a>*</p>
-          </div>
-          <div>
-            <p class="text-base"><a href="https://rishitarora.vercel.app/">Rishit Arora</a>*</p>
-          </div>
+          <div> <p class="text-base"><a href="https://nkve.dev">Nikhil Vijay</a>*</p> </div>
+          <div> <p class="text-base"><a href="https://gtweb.vercel.app">William Forte</a>*</p> </div>
+          <div> <p class="text-base"><a href="linkedin.com/in/prathamesh-trivedi-morris">Prathamesh Trivedi</a>*</p> </div>
+          <div> <p class="text-base"><a href="/">Ishan Gajjar</a>*</p> </div>
+          <div> <p class="text-base"><a href="/">Syon Gupta</a>*</p> </div>
+          <div> <p class="text-base"><a href="linkedin.com/in/sarvesh-patham-5b7950246">Sarvesh Patham</a>*</p> </div>
+          <div> <p class="text-base"><a href="http://sainventions.com/">Sahil Shah</a>*</p></div>
+          <div> <p class="text-base"><a href="https://rishitarora.vercel.app/">Rishit Arora</a>*</p> </div>
         </div>
         <div id="authors" class="mt-5 mb-3 w-8/9 grid grid-rows-1 grid-flow-col gap-4 m-auto">
           <div>
@@ -85,11 +71,11 @@
           </a>
         </div>
 
-        <div class="bg-gray-200 p-6 mt-2 rounded-md w-full"> 
+        <div class="bg-gray-200 px-6 py-4 mt-2 rounded-md w-full"> 
           <p class="text-3xl p4">About Us</p>
-          <p class="p4">We are eight senior students from The Academy for Math, Science, and Engineering, a high school located in Rockaway, NJ.
-            As we are passionate about conducting research and learning about various fields of engineering, we decided to collaborate on a huge research project, which has been condensed into this set of papers.
-            We thank Gao Jun Wu, PhD Candidate and member of the <a href="https://fpal.stanford.edu/people/gao-jun-gary-wu">Stanford FPAL Lab</a>, for contributing his indispensable technical expertise.
+          <p class="p4">We are seniors from The Academy for Math, Science, and Engineering, in Rockaway, NJ.
+            As we are passionate about various topics related to mechanical design and engineering, we decided to collaborate on a huge research project, which has been condensed into this set of papers.
+            We thank Gao Jun Wu, PhD Candidate and member of the <a href="https://fpal.stanford.edu/people/gao-jun-gary-wu">Stanford FPAL Lab</a>, for contributing his expertise as our technical advisor.
           </p>
         </div>
 
@@ -105,58 +91,49 @@
           <button class="next text-xl mx-2" data-target="carousel1">next ►</button>
         </div>
 
-        
-        <div class="bg-gray-200 p-6 mt-4 mb-4 rounded-md ">         
+        <div class="bg-gray-200 mb-2 p-6 mt-4 rounded-md ">         
           <p class="text-3xl">Overview</p>
           <p>This is a set of three papers on drone propellers, optimization of their aeroacoustic performance, design standards, and 3D printing methodology.</p>
         </div>
-
-        <div class=" mb-8 w-3/3 h-40 grid grid-rows-1 grid-cols-3 gap-12 md:gap-2 mx-auto">
+        
+        <div class="mb-16 w-3/3 h-40 grid grid-rows-1 grid-cols-3 gap-12 md:gap-2 mx-auto">
           <a href="1/paper1.html" class="nounderline">
-            <div class="w-50 h-full  text-center">
-              <p class="text-lg mb-2 text-center">Paper 1</p>
-                <p class="text-xl mb-4"><b>Testing Methodology, Material Evaluation, and Fabrication for Propellers</b></p>
+            <div class="w-50 h-full text-center">
+              <button class="text-lg mb-2 text-center bg-gray-800 text-gray-200 py-2 px-4 my-2 mx-2 rounded-3xl">Paper 1</button>
+              <p class="text-xl mb-4"><b>Testing Methodology, Material Evaluation, and Fabrication for Propellers</b></p>
               <div class="p-4 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                
-                <p class="text-lg text-justify mb-2 ">How can we develop standard experimental materials/methods for controlled, research-oriented propeller testing?</p>
+                <p class="text-lg text-justify mb-2">How can we develop standard experimental materials/methods for controlled, research-oriented propeller testing?</p>
               </div>
             </div>
           </a>
           <a href="2/paper2.html" class="nounderline">
-            <div class="w-50 h-full  text-center">
-              <p class="text-lg mb-2 text-center">Paper 2</p>
-                <p class="text-xl mb-4"><b>Evaluation of Aeroacoustics & Annoyance of Unconventional Propeller Designs</b></p>  
+            <div class="w-50 h-full text-center">
+              <button class="text-lg mb-2 text-center bg-gray-800 text-gray-200 py-2 px-4 my-2 mx-2 rounded-3xl">Paper 2</button>
+              <p class="text-xl mb-4"><b>Evaluation of Aeroacoustics & Annoyance of Unconventional Propeller Designs</b></p>  
               <div class="p-4 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                
-                <p class="text-lg  mb-2  text-justify">How can we make an objective function to quantify propeller performance? What can we find from evaluating various designs?</p>
+                <p class="text-lg mb-2 text-justify">How can we make an objective function to quantify propeller performance? What can we find from evaluating various designs?</p>
               </div>
             </div>
           </a>
           <a href="3/paper3.html" class="nounderline">
             <div class="w-50 h-full text-center">
-              <p class="text-lg mb-2 text-center">Paper 3</p>
-                <p class="text-xl mb-4 "><b>Parametric Propeller Curve Construction & General Design Methodology</b> </p>
+              <button class="text-lg mb-2 text-center bg-gray-800 text-gray-200 py-2 px-4 my-2 mx-2 rounded-3xl">Paper 3</button>
+              <p class="text-xl mb-4"><b>Parametric Propeller Curve Construction & General Design Methodology</b></p>
               <div class="p-4 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                
-                <p class="text-lg  mb-2 text-justify">How can we design propellers parametrically? What parameters are useful to control
-                  within research & comparison purposes? 
-                </p>
+                <p class="text-lg mb-2 text-justify">How can we design propellers parametrically? What parameters are useful to control within research & comparison purposes?</p>
               </div>
             </div>
           </a>
         </div>
+      </div>
         <br/>
         <br/>
         <br/>
+        
+        <div class="bg-gray-200 p-6 mt-8 rounded-md ">         
+          <p class="text-3xl">Initial Results</p>
 
-        <div class="bg-gray-200 p-4 mt-10 rounded-md ">         
-          <div class="grid grid-rows-1 grid-cols-3 align-center justify-center">
-            <div id="stl_6_blade_even" style="height: 275px;"></div>
-            <div id="stl_3_loop_toroidal" style="height: 275px;"></div>
-            <div id="stl_6_blade_uneven" style="height: 275px;"></div>  
-          </div>
-
-          <div class="carousel mt-8  text-center" style="max-width: 55rem;">
+          <div class="carousel mt-8 mb-4 text-center" style="max-width: 55rem;">
             <div class="siema" id="carousel2">
               <div><img src="../assets/figure1.PNG" alt="Siema image" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
               <div><img src="../assets/figure2.PNG" alt="Siema image" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
@@ -165,7 +142,105 @@
             <button class="prev text-xl mt-4 mx-2" data-target="carousel2">◄ back</button>
             <button class="next text-xl mt-4" data-target="carousel2">next ►</button>
           </div>
+
+
+          <div class="grid grid-rows-1 grid-cols-3 align-center justify-center">
+            <div id="stl_6_blade_even" style="height: 275px;"></div>
+            <div id="stl_3_loop_toroidal" style="height: 275px;"></div>
+            <div id="stl_6_blade_uneven" style="height: 275px;"></div>  
+          </div>
+
+
+
+          <p>Our findings indicate a clear correlation between propeller design parameters and their aeroacoustic performance. Uneven blade spacing and toroidal geometries have shown potential in reducing propeller noise without significantly compromising efficiency. The results from our CFD simulations were in good agreement with our experimental data, validating our theoretical models and computational methods.</p>
+        
+          <!-- <div class="carousel mt-8 text-center" style="max-width: 55rem;">
+            <div class="siema" id="resultsCarousel">
+                <div><img src="../assets/results_cfd_simulation.png" alt="CFD Simulation Results" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
+                <div><img src="../assets/results_experimental_setup.png" alt="Experimental Setup" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
+                <div><img src="../assets/results_noise_comparison.png" alt="Noise Level Comparison" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
+            </div>
+            <button class="prev text-xl mt-4 mx-2" data-target="resultsCarousel">◄ back</button>
+            <button class="next text-xl mt-4" data-target="resultsCarousel">next ►</button>
+          </div> -->
         </div>
+
+        <div class="bg-gray-200 p-6 mt-4 rounded-md">
+          <p class="text-3xl">Acoustic Analysis</p>
+          <p>In aeroacoustics, understanding and analyzing propeller noise is crucial. This section delves into key concepts and methods used in acoustic analysis.</p>
+      
+          <div class="mt-4">
+              <h2 class="text-2xl">Fast Fourier Transform (FFT)</h2>
+              <p>The FFT is a computational algorithm used to convert a signal from its original domain (often time or space) into a representation in the frequency domain. Mathematically, the FFT can be expressed as:</p>
+              <div class="p-4 rounded-md">
+                  <p>\[ X(k) = \sum_{n=0}^{N-1} x(n) \cdot e^{-\frac{2\pi i}{N} kn} \]</p>
+              </div>
+              <p>where \( x(n) \) is the original signal, \( N \) is the total number of samples, and \( X(k) \) is the resulting frequency domain representation.</p>
+              <p>Here's a Python implementation of the FFT using the NumPy library:</p>
+              <div class="p-4 rounded-md code-container">
+                  <pre><code class="language-python">import numpy as np
+      time_signal = np.array([...])  # Replace with your time-domain signal
+      frequency_signal = np.fft.fft(time_signal)
+      frequencies = np.fft.fftfreq(len(time_signal))</code></pre>
+              </div>
+              <p>In the above code, <code>time_signal</code> is an array representing the signal in the time domain. The <code>fft</code> function transforms this signal into the frequency domain, resulting in the <code>frequency_signal</code> array. The <code>fftfreq</code> function then computes the corresponding frequencies.</p>
+          </div>
+      
+          <div class="mt-4">
+              <h2 class="text-2xl">Sound Pressure Level (SPL)</h2>
+              <p>The SPL is a logarithmic measure used to quantify sound intensity. It is calculated using the formula:</p>
+              <div class="p-4 rounded-md">
+                  <p>\[ SPL = 20 \cdot \log_{10}\left(\frac{p}{p_0}\right) \, \text{dB} \]</p>
+              </div>
+              <p>where \( p \) is the root mean square sound pressure, and \( p_0 \) is the reference sound pressure, typically \( 20 \mu Pa \) in air. Below is a Python code snippet to calculate the SPL:</p>
+              <div class="p-4 rounded-md code-container">
+                  <pre><code class="language-python">import numpy as np
+      p_rms = np.sqrt(np.mean(np.square(pressure_signal)))
+      SPL = 20 * np.log10(p_rms / p_ref)</code></pre>
+              </div>
+          </div>
+      
+          <div class="mt-4">
+              <h2 class="text-2xl">Overall Sound Pressure Level (OASPL)</h2>
+              <p>The OASPL provides a single value that represents the total acoustic energy of a sound spectrum, integrating the SPL over all frequencies. It is calculated as:</p>
+              <div class="p-4 rounded-md ">
+                  <p>\[ OASPL = 10 \cdot \log_{10}\left(\sum_{i} 10^{\frac{SPL_i}{10}}\right) \, \text{dB} \]</p>
+              </div>
+              <p>The Python code to calculate OASPL is shown below:</p>
+              <div class="p-4 rounded-md code-container">
+                  <pre><code class="language-python">OASPL = 10 * np.log10(np.sum(10 ** (SPL / 10)))</code></pre>
+              </div>
+          </div>
+      
+          <div class="mt-4">
+              <h2 class="text-2xl">A-Weighting</h2>
+              <p>A-Weighting is a frequency weighting standard used to mimic the human ear's response to different frequencies, with more emphasis on frequencies between 1 to 6 kHz. The A-Weighted SPL can be calculated using specific weighting filters applied to the frequency components of the sound.</p>
+          </div>
+      
+          <div class="mt-4">
+              <h2 class="text-2xl">Blade Harmonics</h2>
+              <p>Blade harmonics are specific frequencies in the sound spectrum that correspond to the rotational speed of the propeller and its multiples. They are calculated based on the number of blades (\( B \)) and the rotation speed (\( RPM \)):</p>
+              <div class="p-4 rounded-md">
+                  <p>\[ f_b = \frac{B \cdot RPM}{60} \, \text{Hz} \]</p>
+              </div>
+              <p>where \( f_b \) is the blade passing frequency. The harmonics are found at integer multiples of this frequency. The Python code to calculate the blade passing frequency is as follows:</p>
+              <div class="p-4 rounded-md  code-container">
+                  <pre><code class="language-python">blade_passing_frequency = (number_of_blades * RPM) / 60</code></pre>
+              </div>
+          </div>
+      </div>
+      
+      
+
+
+        <div class="bg-gray-200 p-6 mt-4 mb-10 rounded-md text-left">         
+          <p class="text-3xl ">Appendix</p>
+          <a href="https://github.com/your-repository" class="nounderline">
+            <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-2 rounded-3xl "><i class="fa-brands fa-github mr-2"></i>TUBAA Repository</div>
+          </a>
+        </div>
+        
+
       </div>
 
       <footer class="mt-10 p-10 justify-center text-center">
