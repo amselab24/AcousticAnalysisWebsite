@@ -27,13 +27,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
 document.addEventListener("DOMContentLoaded", (event) => {
     const carousel1 = new Siema({
         selector: "#carousel1",
+        loop: true,
     });
 
     const carousel2 = new Siema({
         selector: "#carousel2",
+        loop: true,
     });
 
-    
+    // carousel autoplay duration
+    setInterval(() => carousel1.next(), 7000);
+    setInterval(() => carousel2.next(), 7000);
 
     document.querySelectorAll(".prev").forEach((button) => {
         button.addEventListener("click", () => {
@@ -61,10 +65,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         document.getElementById("stl_6_blade_even"),
         {
             auto_rotate: false,
-            zoom: "165",
+            zoom: "180",
             models: [
                 {
-                    filename: "6_blade_even.stl",
+                    filename: "/assets/stl/6_blade_even.stl",
                     color: "#3d557a",
                     animation: {
                         delta: {
@@ -82,10 +86,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         document.getElementById("stl_3_loop_toroidal"),
         {
             auto_rotate: false,
-            zoom: "165",
+            zoom: "180",
             models: [
                 {
-                    filename: "3_loop_toroidal.stl",
+                    filename: "/assets/stl/3_loop_toroidal.stl",
                     color: "#3d557a",
                     animation: {
                         delta: {
@@ -103,10 +107,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         document.getElementById("stl_6_blade_uneven"),
         {
             auto_rotate: false,
-            zoom: "165",
+            zoom: "180",
             models: [
                 {
-                    filename: "6_blade_uneven.stl",
+                    filename: "/assets/stl/6_blade_uneven.stl",
                     color: "#3d557a",
                     animation: {
                         delta: {
@@ -119,4 +123,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
             ],
         }
     );
+});
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    $("pre[name='pre']").each(function () {
+        var html = $(this).html()
+        var blankLen = (html.split('\n')[0].match(/^\s+/)[0]).length
+        $(this).html($.trim(html.replace(eval("/^ {" + blankLen + "}/gm"), "")))
+    });
 });
