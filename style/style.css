@@ -6,8 +6,12 @@
 }
 
 a:not(.nounderline) {
-    text-decoration: underline !important;
+    text-decoration: none;
     color: #2525aa !important;
+}
+
+a:hover:not(.nounderline):not(#TUBAA) {
+    text-decoration: underline;
 }
 
 #main {
@@ -16,7 +20,7 @@ a:not(.nounderline) {
 }
 
 .text-base {
-    font-size: 16px !important;
+    font-size: 16px;
 }
 
 .text-6xl {
@@ -24,9 +28,9 @@ a:not(.nounderline) {
 }
 
 .institution {
-    font-size: 10px !important;
+    font-size: 10px;
     font-weight: 300;
-    color: grey !important;
+    color: grey;
 }
 
 /* Dark Mode Toggle Button Styles */
@@ -137,9 +141,7 @@ a:not(.nounderline) {
 
 .siema img {
     height: 100%;
-  }
-
-
+}
   
 #carousel2 {
     max-width: 55rem !important;

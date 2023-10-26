@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
-    <script src="./stl_viewer/stl_viewer.min.js"></script>
-    <script src="https://pawelgrzybek.github.io/siema/assets/siema.min.js"></script>
-    <script src="script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/assets/js/stl_viewer/stl_viewer.min.js"></script>
+    <script src="/assets/js/siema.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>TUBAA Aeroacoustics</title>
-    <style>
-        .nounderline { text-decoration: none; }
-    </style>
 </head>
 <body class="w-4/5 mx-auto justify-center text-justify">
     
@@ -27,7 +24,7 @@
   
     <div id="main" class="h-full p-8">
       <header class="justify-center text-center">
-        <p class="text-6xl"><a href="/" class="nounderline">TUBAA</a></p>
+        <p class="text-6xl"><a href="/" class="nounderline" id="TUBAA">TUBAA</a></p>
         <p class="text-3xl">Toroidal and Uneven Blade Aeroacoustic Analysis</p>
         <p class="text-xl">Methodology for Parametric Propeller Design, Testing, and Aeroacoustic Evaluation</p>
         <div id="authors" class="mt-5 mb-3 w-8/9 grid grid-rows-1 grid-flow-col gap-4 mx-2">
@@ -50,16 +47,16 @@
       </header>
       <div id="content">
         <div class="mx-auto text-center">
-          <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-2 mx-2 rounded-3xl">
+          <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl">
             arXiv
             <!-- add hrefs when preprinted -->
-            <a  class="nounderline">
+            <a class="nounderline">
               <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">1</div>
             </a>
-            <a  class="nounderline">
+            <a class="nounderline">
               <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">2</div>
             </a>
-            <a  class="nounderline">
+            <a class="nounderline">
               <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">3</div>
             </a>
           </div>
@@ -79,12 +76,12 @@
           </p>
         </div>
 
-        <div class="carousel  text-center">
+        <div class="carousel text-center">
           <div class="siema" id="carousel1">
-            <div><img src="../assets/3_loop_toroidal.png" alt="Siema image" /></div>
-            <div><img src="../assets/6_blade_uneven.png" alt="Siema image" /></div>
-            <div><img src="../assets/6_blade_even.png" alt="Siema image" /></div>
-            <div><img src="../assets/2_loop_counterweight.png" alt="Siema image" /></div>
+            <div><img src="../assets/slideshow/3_loop_toroidal.png" alt="Siema image" /></div>
+            <div><img src="../assets/slideshow/6_blade_uneven.png" alt="Siema image" /></div>
+            <div><img src="../assets/slideshow/6_blade_even.png" alt="Siema image" /></div>
+            <div><img src="../assets/slideshow/2_loop_counterweight.png" alt="Siema image" /></div>
           </div>
   
           <button class="prev text-xl mx-2" data-target="carousel1">◄ back</button>
@@ -96,43 +93,39 @@
           <p>This is a set of three papers on drone propellers, optimization of their aeroacoustic performance, design standards, and 3D printing methodology.</p>
         </div>
         
-        <div class="mb-16 w-3/3 h-40 grid grid-rows-1 grid-cols-3 gap-12 md:gap-2 mx-auto">
-          <a href="1/paper1.html" class="nounderline">
-            <div class="w-50 h-full text-center">
+        <div class="mb-2 p-6 grid grid-rows-1 grid-cols-3 gap-12 md:gap-2 mx-auto">
+          <a href="1/index.html" class="nounderline">
+            <div class="text-center">
               <button class="text-lg mb-2 text-center bg-gray-800 text-gray-200 py-2 px-4 my-2 mx-2 rounded-3xl">Paper 1</button>
               <p class="text-xl mb-4"><b>Testing Methodology, Material Evaluation, and Fabrication for Propellers</b></p>
               <div class="p-4 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                <p class="text-lg mb-2">How can we develop standard experimental materials/methods for controlled, research-oriented propeller testing?</p>
+                <p class="text-lg mb-2 md:text-justify text-left">How can we develop standard experimental materials/methods for controlled, research-oriented propeller testing?</p>
               </div>
             </div>
           </a>
-          <a href="2/paper2.html" class="nounderline">
-            <div class="w-50 h-full text-center">
+          <a href="2/index.html" class="nounderline">
+            <div class="text-center">
               <button class="text-lg mb-2 text-center bg-gray-800 text-gray-200 py-2 px-4 my-2 mx-2 rounded-3xl">Paper 2</button>
               <p class="text-xl mb-4"><b>Evaluation of Aeroacoustics & Annoyance of Unconventional Propeller Designs</b></p>  
               <div class="p-4 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                <p class="text-lg mb-2">How can we make an objective function to quantify propeller performance? What can we find from evaluating various designs?</p>
+                <p class="text-lg mb-2 md:text-justify text-left">How can we make an objective function to quantify propeller performance? What can we find from evaluating various designs?</p>
               </div>
             </div>
           </a>
-          <a href="3/paper3.html" class="nounderline">
-            <div class="w-50 h-full text-center">
+          <a href="3/index.html" class="nounderline">
+            <div class="text-center">
               <button class="text-lg mb-2 text-center bg-gray-800 text-gray-200 py-2 px-4 my-2 mx-2 rounded-3xl">Paper 3</button>
               <p class="text-xl mb-4"><b>Parametric Propeller Curve Construction & General Design Methodology</b></p>
               <div class="p-4 bg-gray-200 rounded-md flex justify-center align-center flex-col">
-                <p class="text-lg mb-2">How can we design propellers parametrically? What parameters are useful to control within research & comparison purposes?</p>
+                <p class="text-lg mb-2 md:text-justify text-left">How can we design propellers parametrically? What parameters are useful to control within research & comparison purposes?</p>
               </div>
             </div>
           </a>
         </div>
-      </div>
-        <br/>
-        <br/>
-        <br/>
-        
+
         <div class="bg-gray-200 p-6 mt-8 rounded-md ">         
           <p class="text-3xl">Initial Results</p>
-
+  
           <div class="carousel mt-8 mb-4 text-center" style="max-width: 55rem;">
             <div class="siema" id="carousel2">
               <div><img src="../assets/figure1.PNG" alt="Siema image" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
@@ -142,16 +135,14 @@
             <button class="prev text-xl mt-4 mx-2" data-target="carousel2">◄ back</button>
             <button class="next text-xl mt-4" data-target="carousel2">next ►</button>
           </div>
-
-
+  
+  
           <div class="grid grid-rows-1 grid-cols-3 align-center justify-center">
             <div id="stl_6_blade_even" style="height: 275px;"></div>
             <div id="stl_3_loop_toroidal" style="height: 275px;"></div>
             <div id="stl_6_blade_uneven" style="height: 275px;"></div>  
           </div>
-
-
-
+  
           <p>Our findings indicate a clear correlation between propeller design parameters and their aeroacoustic performance. Uneven blade spacing and toroidal geometries have shown potential in reducing propeller noise without significantly compromising efficiency. The results from our CFD simulations were in good agreement with our experimental data, validating our theoretical models and computational methods.</p>
         
           <!-- <div class="carousel mt-8 text-center" style="max-width: 55rem;">
@@ -179,9 +170,9 @@
               <p>Here's a Python implementation of the FFT using the NumPy library:</p>
               <div class="p-4 rounded-md code-container">
                   <pre><code class="language-python">import numpy as np
-      time_signal = np.array([...])  # Replace with your time-domain signal
-      frequency_signal = np.fft.fft(time_signal)
-      frequencies = np.fft.fftfreq(len(time_signal))</code></pre>
+<!--               -->time_signal = np.array([...])  # Replace with your time-domain signal
+<!--               -->frequency_signal = np.fft.fft(time_signal)
+<!--               -->frequencies = np.fft.fftfreq(len(time_signal))</code></pre>
               </div>
               <p>In the above code, <code>time_signal</code> is an array representing the signal in the time domain. The <code>fft</code> function transforms this signal into the frequency domain, resulting in the <code>frequency_signal</code> array. The <code>fftfreq</code> function then computes the corresponding frequencies.</p>
           </div>
@@ -190,13 +181,13 @@
               <h2 class="text-2xl">Sound Pressure Level (SPL)</h2>
               <p>The SPL is a logarithmic measure used to quantify sound intensity. It is calculated using the formula:</p>
               <div class="p-4 rounded-md">
-                  <p>\[ SPL = 20 \cdot \log_{10}\left(\frac{p}{p_0}\right) \, \text{dB} \]</p>
+                  <p>\[ \text{SPL} = 20 \cdot \log_{10}\left(\frac{p}{p_0}\right) \, \text{dB} \]</p>
               </div>
               <p>where \( p \) is the root mean square sound pressure, and \( p_0 \) is the reference sound pressure, typically \( 20 \mu Pa \) in air. Below is a Python code snippet to calculate the SPL:</p>
               <div class="p-4 rounded-md code-container">
                   <pre><code class="language-python">import numpy as np
-      p_rms = np.sqrt(np.mean(np.square(pressure_signal)))
-      SPL = 20 * np.log10(p_rms / p_ref)</code></pre>
+<!--               -->p_rms = np.sqrt(np.mean(np.square(pressure_signal)))
+<!--               -->SPL = 20 * np.log10(p_rms / p_ref)</code></pre>
               </div>
           </div>
       
@@ -204,7 +195,7 @@
               <h2 class="text-2xl">Overall Sound Pressure Level (OASPL)</h2>
               <p>The OASPL provides a single value that represents the total acoustic energy of a sound spectrum, integrating the SPL over all frequencies. It is calculated as:</p>
               <div class="p-4 rounded-md ">
-                  <p>\[ OASPL = 10 \cdot \log_{10}\left(\sum_{i} 10^{\frac{SPL_i}{10}}\right) \, \text{dB} \]</p>
+                  <p>\[ \text{OASPL} = 10 \cdot \log_{10}\left(\sum_{i} 10^{\frac{SPL_i}{10}}\right) \, \text{dB} \]</p>
               </div>
               <p>The Python code to calculate OASPL is shown below:</p>
               <div class="p-4 rounded-md code-container">
@@ -228,10 +219,7 @@
                   <pre><code class="language-python">blade_passing_frequency = (number_of_blades * RPM) / 60</code></pre>
               </div>
           </div>
-      </div>
-      
-      
-
+        </div>
 
         <div class="bg-gray-200 p-6 mt-4 mb-10 rounded-md text-left">         
           <p class="text-3xl ">Appendix</p>
@@ -239,14 +227,11 @@
             <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-2 rounded-3xl "><i class="fa-brands fa-github mr-2"></i>TUBAA Repository</div>
           </a>
         </div>
+      </div> <!-- end of #content -->
         
-
-      </div>
-
       <footer class="mt-10 p-10 justify-center text-center">
         <p class="text-base">© 2023 MSE LAB '24</p>
       </footer>
     </div>
-
   </body>
 </html>
