@@ -35,29 +35,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
         loop: true,
     });
 
+    const resultsCarousel = new Siema({
+        selector: "#resultsCarousel",
+        loop: true,
+    });
+
     // carousel autoplay duration
     setInterval(() => carousel1.next(), 7000);
     setInterval(() => carousel2.next(), 7000);
+    setInterval(() => resultsCarousel.next(), 7000);
 
     document.querySelectorAll(".prev").forEach((button) => {
         button.addEventListener("click", () => {
-            const target = button.getAttribute("data-target");
-            if (target === "carousel1") {
-                carousel1.prev();
-            } else if (target === "carousel2") {
-                carousel2.prev();
-            }
+            eval(button.getAttribute("data-target")).prev();
         });
     });
 
     document.querySelectorAll(".next").forEach((button) => {
         button.addEventListener("click", () => {
-            const target = button.getAttribute("data-target");
-            if (target === "carousel1") {
-                carousel1.next();
-            } else if (target === "carousel2") {
-                carousel2.next();
-            }
+            eval(button.getAttribute("data-target")).next();
         });
     });
 

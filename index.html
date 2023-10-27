@@ -78,10 +78,10 @@
 
         <div class="carousel text-center">
           <div class="siema" id="carousel1">
-            <div><img src="../assets/slideshow/3_loop_toroidal.png" alt="Siema image" /></div>
-            <div><img src="../assets/slideshow/6_blade_uneven.png" alt="Siema image" /></div>
-            <div><img src="../assets/slideshow/6_blade_even.png" alt="Siema image" /></div>
-            <div><img src="../assets/slideshow/2_loop_counterweight.png" alt="Siema image" /></div>
+            <div><img src="../assets/figures/root/props/3_loop_toroidal.png" alt="Siema image" /></div>
+            <div><img src="../assets/figures/root/props/6_blade_uneven.png" alt="Siema image" /></div>
+            <div><img src="../assets/figures/root/props/6_blade_even.png" alt="Siema image" /></div>
+            <div><img src="../assets/figures/root/props/2_loop_counterweight.png" alt="Siema image" /></div>
           </div>
   
           <button class="prev text-xl mx-2" data-target="carousel1">◄ back</button>
@@ -126,10 +126,10 @@
         <div class="bg-gray-200 p-6 mt-8 rounded-md ">         
           <p class="text-3xl">Initial Results</p>
   
-          <div class="carousel mt-8 mb-4 text-center" style="max-width: 55rem;">
+          <div class="carousel carousel-w-55 mt-8 mb-4 text-center">
             <div class="siema" id="carousel2">
-              <div><img src="../assets/figure1.PNG" alt="Siema image" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
-              <div><img src="../assets/figure2.PNG" alt="Siema image" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
+              <div><img src="../assets/figures/root/figure1.PNG" alt="A-Weighted Power Spectral Densities of Propellers at 6k RPM - Comparing Types D and B"/></div>
+              <div><img src="../assets/figures/root/figure2.PNG" alt="A-Weighted Power Spectral Densities of Propellers at 6k RPM - Comparing Types D and E"/></div>
             </div>
   
             <button class="prev text-xl mt-4 mx-2" data-target="carousel2">◄ back</button>
@@ -145,15 +145,16 @@
   
           <p>Our findings indicate a clear correlation between propeller design parameters and their aeroacoustic performance. Uneven blade spacing and toroidal geometries have shown potential in reducing propeller noise without significantly compromising efficiency. The results from our CFD simulations were in good agreement with our experimental data, validating our theoretical models and computational methods.</p>
         
-          <!-- <div class="carousel mt-8 text-center" style="max-width: 55rem;">
+          <div class="carousel carousel-w-55 mt-8 text-center">
             <div class="siema" id="resultsCarousel">
-                <div><img src="../assets/results_cfd_simulation.png" alt="CFD Simulation Results" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
-                <div><img src="../assets/results_experimental_setup.png" alt="Experimental Setup" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
-                <div><img src="../assets/results_noise_comparison.png" alt="Noise Level Comparison" style="border:3px solid rgba(15, 20, 30, 0.5);"/></div>
+                <div><img src="../assets/figures/root/3-Blade_Toroid v7_velocity250.png" alt="CFD Simulation Results - Toroid Velocity"/></div>
+                <div><img src="../assets/figures/root/3-Loop_Toroid_v7_pressure250.png" alt="CFD Simulation Results - Toroid Surface Pressure Slice"/></div>
+                <!-- <div><img src="../assets/results_experimental_setup.png" alt="Experimental Setup""/></div> -->
+                <!-- <div><img src="../assets/results_noise_comparison.png" alt="Noise Level Comparison""/></div> -->
             </div>
             <button class="prev text-xl mt-4 mx-2" data-target="resultsCarousel">◄ back</button>
             <button class="next text-xl mt-4" data-target="resultsCarousel">next ►</button>
-          </div> -->
+          </div>
         </div>
 
         <div class="bg-gray-200 p-6 mt-4 rounded-md">
@@ -218,6 +219,22 @@
               <div class="p-4 rounded-md  code-container">
                   <pre><code class="language-python">blade_passing_frequency = (number_of_blades * RPM) / 60</code></pre>
               </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-200 p-6 mt-4 rounded-md">
+          <p class="text-3xl">Aerodynamic Analysis</p>
+          <p>To complement the findings of our acoustic analysis, we have simulated the aerodynamic performance of each propeller in order to determine the cause of experimental noise observations.</p>
+
+          <div class="mt-4">
+            <h2 class="text-2xl">Computational Fluid Dynamics (CFD)</h2>
+            <p>CFD is a simulation technique that predicts and analyzes fluid-like flow. We have used it to analyze the aerodynamic performance of the propellers, paying attention to such key metrics as surface pressure, velocity, and vorticity.</p>
+          </div>
+
+          <div class="mt-4">
+            <h2 class="text-2xl">Tip Vortices</h2>
+            <p>A sign of turbulent flow...</p>
+            <p>Include visual accompaniment</p>
           </div>
         </div>
 

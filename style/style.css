@@ -139,8 +139,13 @@ a:hover:not(.nounderline):not(#TUBAA) {
     justify-content: center;
 }
 
+.carousel-w-55 {
+    max-width: 55rem;
+}
+
 .siema img {
     height: 100%;
+    border: 3px solid rgba(15, 20, 30, 0.5);
 }
   
 #carousel2 {
