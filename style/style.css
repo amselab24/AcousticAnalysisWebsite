@@ -134,21 +134,26 @@ a:hover:not(.nounderline):not(#TUBAA) {
 .carousel {
     width: 100%;
     height: 100%;
-    max-width: 35rem;
+    max-width: 55rem;
     margin: 0 auto;
     justify-content: center;
 }
 
-.carousel-w-55 {
-    max-width: 55rem;
-}
-
-.siema img {
-    height: 100%;
-    border: 3px solid rgba(15, 20, 30, 0.5);
+#carousel1 {
+    border: none !important;
 }
   
-#carousel2 {
-    max-width: 55rem !important;
+#carousel1 {
+    max-width: 35rem !important;
     margin: auto;
+}
+
+#resultsCarousel {
+    max-width: 35rem !important;
+    margin: auto;
+}
+
+#carousel2, #resultsCarousel img {
+    height: 100%;
+    border: 3px solid rgba(15, 20, 30, 0.5);
 }
