@@ -149,6 +149,7 @@ a:hover:not(.nounderline):not(#TUBAA) {
 #carousel1 {
     max-width: 100% !important;
     border-radius: 10px;
+    opacity: 96% !important;
 }
 
 #carousel1 img, video{
@@ -167,3 +168,4 @@ a:hover:not(.nounderline):not(#TUBAA) {
     height: 100%;
     border: 3px solid rgba(15, 20, 30, 0.5);
 }
+
