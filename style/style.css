@@ -151,7 +151,7 @@ a:hover:not(.nounderline):not(#TUBAA) {
     border-radius: 10px;
 }
 
-#carousel1 img {
+#carousel1 img, video{
     padding: 2px !important;
     border-radius: 10px;
     transform: translateX(-50%);
