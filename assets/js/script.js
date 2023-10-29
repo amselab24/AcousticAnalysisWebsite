@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 document.addEventListener("DOMContentLoaded", (event) => {
     const carousel1 = new Siema({
         selector: "#carousel1",
+        perPage: {
+            768: 3,
+            1024: 2,
+        },
         loop: true,
     });
 
