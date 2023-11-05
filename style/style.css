@@ -169,3 +169,20 @@ a:hover:not(.nounderline):not(#TUBAA) {
     border: 3px solid rgba(15, 20, 30, 0.5);
 }
 
+.collumned {
+    /* mb-2 grid grid-rows-1 grid-cols-3 gap-12 md:gap-2 mx-auto */
+
+    /* make this be grid style with 3 collumns and same width*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: auto;
+    max-width: 1050px;
+}
+
+/* media query when width is less than 1050 */
+@media (max-width: 1050px) {
+    .collumned {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
