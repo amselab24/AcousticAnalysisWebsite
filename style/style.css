@@ -164,9 +164,16 @@ a:hover:not(.nounderline):not(#TUBAA) {
     margin: auto;
 }
 
-#carousel2, #resultsCarousel img {
+#resultsCarousel img {
     height: 100%;
     border: 3px solid rgba(15, 20, 30, 0.5);
+}
+
+#carousel2 img {
+    height: 400px !important;
+    width: auto;
+    margin: auto;
+    height: 100%;
 }
 
 .collumned {
@@ -185,4 +192,75 @@ a:hover:not(.nounderline):not(#TUBAA) {
     .collumned {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+
+
+
+.top-section {
+    position: absolute;
+    width: 95%;
+    z-index: 100;
+}
+
+.rounded-box {
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    background: #000000ED; /* Futuristic grid pattern */    
+    border-radius: 6px;
+    /* border: 1px solid #000; */
+    padding: 2px !important;
+    margin: 2px auto;
+    position: relative;
+}
+.rounded-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(0deg, transparent 24%, #232d3b 25%, #232d3b 26%, transparent 26%, transparent 74%, #232d3b 75%, #232d3b 76%, transparent 76%),
+                      linear-gradient(90deg, transparent 24%, #232d3b 25%, #232d3b 26%, transparent 26%, transparent 74%, #232d3b 75%, #232d3b 76%, transparent 76%);
+    background-size: 50px 50px;
+    border-radius: 18px; /* Slightly smaller than the box to fit inside the border */
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+.file-boxes {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 8px;
+    left: 6px;
+    right: 6px;
+}
+
+.file-box {
+    flex: 1;
+    text-align: center;
+    background-color: #29375188; /* Darker background for visibility */
+    color: white; /* White text for visibility */
+    border-radius: 4px;
+    margin: 0 2px;
+    padding: 3px 0;
+}
+
+.xyz-icon {
+    position: absolute;
+    top: -18px;
+    right: -14px;
+    width: 130px; /* Adjust as needed */
+    height: auto;
+    /* mix-blend-mode:color; Blend with the background */
+    filter: invert(100%);
+}
+
+.cad-models {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    mix-blend-mode: lighten;
 }
