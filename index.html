@@ -38,17 +38,17 @@
         <p style="font-size: 18px;" class="text-xl">Methodology for Parametric Propeller Design, Testing, and Aeroacoustic Evaluation</p>
         <!-- <div style="opacity: 0.97;"><p class="text-base mt-2 font-semibold">Students:</p></div> -->
         <!-- <div style="opacity: 0.75; font-size: 1rem; font-weight: 600;"><p class="mt-2">Students</p></div> -->
-        <div id="authors" class="mt-3 mb-1 grid grid-rows-1 grid-flow-col gap-3 mx-2">
+        <div id="authors" class="mt-3 mb-1 grid grid-rows-1 grid-flow-col gap-3 mx-2 overflow-scroll">
           <div> <p class="text-base"><a href="https://nkve.dev">Nikhil Vijay</a>*</p> </div>
           <div> <p class="text-base"><a href="https://gtweb.vercel.app">William Forte</a>*</p> </div>
-          <div> <p class="text-base"><a href="/">Syon Gupta</a>*</p> </div>
           <div> <p class="text-base"><a href="/">Ishan Gajjar</a>*</p> </div>
-          <div> <p class="text-base"><a href="http://sainventions.com/">Sahil Shah</a>*</p></div>
           <div> <p class="text-base"><a href="linkedin.com/in/sarvesh-patham-5b7950246">Sarvesh Patham</a>*</p> </div>
+          <div> <p class="text-base"><a href="/">Syon Gupta</a>*</p> </div>
+          <div> <p class="text-base"><a href="http://sainventions.com/">Sahil Shah</a>*</p></div>
           <div> <p class="text-base"><a href="linkedin.com/in/prathamesh-trivedi-morris">Prathamesh Trivedi</a>*</p> </div>
           <div> <p class="text-base"><a href="https://rishitarora.vercel.app/">Rishit Arora</a>*</p> </div>
         </div>
-        <div style="opacity: 0.95;" class="text-sm">*The Academy for Mathematics, Science & Engineering—NJ, USA</div>
+          <div style="opacity: 0.95;" class="text-sm">*The Academy for Mathematics, Science & Engineering—NJ, USA</div>
 
         <div style="opacity: 0.85; font-size: 1rem; font-weight: 600;"><p class="mt-4">Advisors:</p></div>
         <div id="authors" class="mt-1 mb-1  flex justify-center gap-4 m-auto">
@@ -57,14 +57,17 @@
         </div>
         <div style="opacity: 0.95;" class="text-sm">†Flow Physics and Aeroacoustics Laboratory, Stanford University—CA, USA</div>
         <div style="opacity: 0.95;" class="text-sm">‡Computational Flow Physics and Aeroacoustics Laboratory, UC Davis—CA, USA</div>
-        
       </header>
+
       <div id="content">
         <div class="mx-auto text-center">
-          <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl">
-            arXiv
+          <a href="./assets/VijayEtAl_2023_AcousticAnalysis.pdf"  class="nounderline">
+            <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-4 mx-2 rounded-3xl">
+              <i class="fa-solid fa-file-lines mr-2"></i>Paper
+            </div>
+          </a>
             <!-- add hrefs when preprinted -->
-            <a class="nounderline">
+            <!-- <a class="nounderline">
               <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">1</div>
             </a>
             <a class="nounderline">
@@ -72,12 +75,13 @@
             </a>
             <a class="nounderline">
               <div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl">3</div>
-            </a>
+            </a> -->
+          <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-2 mx-2 rounded-3xl">
+            <i class="fa-brands fa-github mr-2"></i>Files
+            <a href="https://github.com/amselab24/AcousticAnalysis"><div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl font-bold"><i class="fa-solid fa-cube mr-0"></i></div></a>
+            <a href="https://github.com/amselab24/AcousticAnalysis"><div class="text-base inline-block bg-gray-400 text-gray-800 ml-2 px-2 rounded-2xl font-bold"><i class="fa-regular fa-image mr-0"></i></div></a>
           </div>
           <a href="https://github.com/amselab24/AcousticAnalysisWebsite"  class="nounderline">
-            <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-2 mx-2 rounded-3xl"><i class="fa-brands fa-github mr-2"></i>GitHub</div>
-          </a>
-          <a href="https://github.com/amselab24/AcousticAnalysis"  class="nounderline">
             <div class="text-base inline-block bg-gray-800 text-gray-200 py-3 px-5 my-2 mx-2 rounded-3xl"><i class="fa-solid fa-code mr-2"></i>Code</div>
           </a>
         </div>
@@ -94,29 +98,29 @@
           <button class="next text-xl mx-2" data-target="carousel1">next ►</button>
         </div>
 
-        <div class="bg-gray-200 px-6 py-4 mt-2 rounded-md w-full"> 
+        <div class="bg-gray-200 px-6 py-4 mt-4 rounded-md w-full"> 
           <p class="text-3xl p4">Acknowledgements</p>
           <p class="p4">We thank <a href="https://fpal.stanford.edu/people/gao-jun-gary-wu">Gao Jun Wu</a>, a PhD Candidate of the <a href="https://fpal.stanford.edu/">Stanford FPAL Lab</a> for his expert technical advisory on the project as a whole, and in helping us to organize and plan the research direction. We also thank<a href="https://faculty.engineering.ucdavis.edu/slee/"> Professor Seongkyu Lee</a>, director of the <a href="https://faculty.engineering.ucdavis.edu/slee/research/">UC Davis CFPA Lab</a>, for his advisory regarding computational methods and validation. Additionally, we would like to thank Dr. Nikolas Zawodny of <a href="https://aab.larc.nasa.gov/personnel/">NASA's Langley Research Center</a> for his suggestion to base our propeller designs around those discussed in <a href="https://ntrs.nasa.gov/citations/20220015637">this paper.</a> That is our current objective regarding computational validation.</p>
           </p>
         </div>
 
-        <div class="bg-gray-200 px-6 py-4 mt-2 rounded-md w-full"> 
+        <!-- <div class="bg-gray-200 px-6 py-4 mt-4 rounded-md w-full"> 
           <p class="text-3xl p4">About Us</p>
           <p class="p4">We are seniors from The Academy for Math, Science, and Engineering, in Rockaway, NJ.
-            As we are passionate about various topics related to mechanical design and engineering, we decided to collaborate on a large research project, which has been condensed into a set of papers.
+            As we are passionate about various topics related to mechanical design and engineering, we decided to collaborate on a large research project.
           </p>
-        </div>
+        </div> -->
 
-        <div class="bg-gray-200 mb-2 px-6 py-4 mt-2 rounded-md w-full">         
+        <div class="bg-gray-200 mb-2 px-6 py-4 mt-4 rounded-md w-full">         
           <p class="text-3xl">Overview</p>
-          <p>This is a set of three papers<sup style="opacity:90%;">[1]</sup> on unconventional drone propellers, analysis of their experimental psychoacoustics, optimization of their design methodology, validation with computational aeroacoustics.</p>
+          <!-- <p>This is a set of three papers<sup style="opacity:90%;">[1]</sup> on unconventional drone propellers, analysis of their experimental psychoacoustics, optimization of their design methodology, validation with computational aeroacoustics.</p>
           <p style="opacity: 96%;" class="mt-3 ">
             <sup>[1]</sup> Some of the work showcased on this website was prior to working with technical advisors, and we have since shifted scope significantly. We aim to continue investigating propeller aeroacoustics with a rigorous approach, and we are now working on experimental validation for our CFD methods, accessing an anechoic chamber to conduct acoustics testing, and restructuring our approach to propeller design.
-          </p>
+          </p> -->
+          <p>Unmanned aerial vehicles (UAVs) are becoming more commonly used in populated areas, raising concerns about noise pollution generated from their propellers. We seek to investigate the acoustic performance of unconventional propeller designs—specifically toroidal and uneven-blade spaced propellers—for their potential in reducing psychoacoustic annoyance.</p>
         </div>
         
-        <div class="collumned">
-          <!-- <a href="1/index.html" class="nounderline"> -->
+        <!-- <div class="collumned">
             <div class="text-center">
               <button class="text-lg mb-2 text-center bg-gray-800 text-gray-200 py-2 px-4 my-2 mx-2 rounded-3xl">Focus 1</button>
               <p class="text-xl mb-4"><b>Overall Evaluation Methodology for Unconventional Propellers</b></p>
@@ -124,8 +128,6 @@
                 <p class="text-lg mb-2  md:text-justify text-left">How can we develop standard, controlled methods for evaluating the aeroacoustic properties of unconventional propellers?</p>
               </div>
             </div>
-          <!-- </a> -->
-          <!-- <a href="2/index.html" class="nounderline"> -->
             <div class="text-center">
               <button class="text-lg mb-2 text-center bg-gray-800 text-gray-200 py-2 px-4 my-2 mx-2 rounded-3xl">Focus 2</button>
               <p class="text-xl mb-4"><b>Psychoacoustic Evaluation of Unconventional Propeller Designs</b></p>  
@@ -133,8 +135,6 @@
                 <p class="text-lg mb-2 md:text-justify text-left">How can we use objective metrics to evaluate the psychoacoustics of propellers? What will we learn from testing various designs?</p>
               </div>
             </div>
-          <!-- </a> -->
-          <!-- <a href="3/index.html" class="nounderline"> -->
             <div class="text-center">
               <button class="text-lg mb-2 text-center bg-gray-800 text-gray-200 py-2 px-4 my-2 mx-2 rounded-3xl">Focus 3</button>
               <p class="text-xl mb-4"><b>Parametric Propeller Construction & Design Methodology</b></p>
@@ -142,12 +142,13 @@
                 <p class="text-lg mb-2  md:text-justify text-left">Can unconventional propellers (ie: toroidals) be designed with useful parameters? Which are the most important to control for research?</p>
               </div>
             </div>
-          <!-- </a> -->
-        </div>
+        </div> -->
 
         <div class="bg-gray-200 p-6 mt-4 rounded-md ">         
           <p class="text-3xl">Initial Results</p>
-          <p>All files shown here will be found at the Appendix at the bottom of this page. As the scope of our project has changed, many of the initial results have been removed, as we are working on CFD validation, and aim to perform controlled acoustic testing in an anechoic chamber.</p>
+          <!-- <p>All files shown here will be found at the Appendix at the bottom of this page. As the scope of our project has changed, many of the initial results have been removed, as we are working on CFD validation, and aim to perform controlled acoustic testing in an anechoic chamber.</p> -->
+          <p><span class="italic">Our experimental results show that our designs noticeably reduced psychoacoustic annoyance while showing small improvements in thrust.</span>
+          We hope to extend our results by accessing an anechoic chamber to conduct acoustics testing and developing a standardized methodology for our propeller designs.</p>
           <h2 class="text-2xl mt-4">Current TUBAA Propellers</h2>
           <div class="rounded-box mt-2 mb-4">
             <div class="top-section">
@@ -158,7 +159,7 @@
               </div>
             </div>
             <img src="assets/image-removebg-preview (73).png" class="xyz-icon" alt="XYZ Icon">
-            <div class="file-boxes">
+            <div class="file-boxes invisible md:visible lg:visible overflow-hidden">
                 <div class="file-box">CONVENTIONAL.STL</div>
                 <div class="file-box">TOROIDAL.STL</div>
                 <div class="file-box">UNEVEN.STL</div>

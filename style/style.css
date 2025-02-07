@@ -17,6 +17,17 @@ a:hover:not(.nounderline):not(#TUBAA) {
 #main {
     max-width: 1050px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#main::-webkit-scrollbar {
+    display: none;
+}
+
+#authors::-webkit-scrollbar {
+    display: none;
 }
 
 .text-base {
